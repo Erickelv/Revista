@@ -38,13 +38,9 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
-  /* ─── SCROLLBAR ─── */
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--cyan-dim); border-radius: 2px; }
-
-  /* ─── NAV ─── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
@@ -72,8 +68,6 @@
     animation: blink 2s infinite;
   }
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
-
-  /* ─── HERO ─── */
   #hero {
     min-height: 100vh;
     display: grid;
@@ -163,7 +157,7 @@
   }
   .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); }
 
-  /* ─── RADAR CANVAS ─── */
+ 
   .hero-right {
     position: relative; z-index: 2;
     display: flex; flex-direction: column; align-items: center;
@@ -180,7 +174,7 @@
     text-align: center;
   }
 
-  /* ─── STATS BANNER ─── */
+ 
   #stats-banner {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -216,7 +210,7 @@
   .stat-bar.red { background: var(--red); }
   .stat-bar.yellow { background: var(--yellow); }
 
-  /* ─── SECTIONS ─── */
+  
   section { padding: 100px 48px; }
   .section-eyebrow {
     display: inline-flex; align-items: center; gap: 10px;
@@ -241,7 +235,6 @@
     max-width: 600px; margin-bottom: 60px;
   }
 
-  /* ─── RESEARCH QUESTION ─── */
   #research-q {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -267,7 +260,6 @@
   }
   .rq-text .hi { color: var(--cyan); }
 
-  /* ─── INCIDENTS ─── */
   #incidents { background: var(--bg); }
   .incidents-grid {
     display: grid; grid-template-columns: repeat(3, 1fr);
@@ -322,7 +314,6 @@
   .tag.cyan { border-color: var(--border); color: var(--cyan); }
   .tag.yellow { border-color: rgba(255,212,0,0.4); color: var(--yellow); }
 
-  /* ─── THEORY ─── */
   #teoria { background: var(--bg2); }
   .theory-grid {
     display: grid; grid-template-columns: 1fr 1fr 1fr;
@@ -351,7 +342,6 @@
   }
   .theory-body { font-size: 13px; color: var(--text2); line-height: 1.65; }
 
-  /* ─── VARIABLES ─── */
   #variables { background: var(--bg); }
   .var-flow {
     display: grid; grid-template-columns: 1fr auto 1fr auto 1fr;
@@ -381,7 +371,6 @@
     padding: 0 8px; text-align: center;
   }
 
-  /* ─── HYPOTHESIS ─── */
   #hipotesis { background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); }
   .hyp-box {
     max-width: 900px; margin: 0 auto;
@@ -406,7 +395,6 @@
     line-height: 1.6; position: relative; z-index: 1;
   }
 
-  /* ─── METHODOLOGY ─── */
   #metodologia { background: var(--bg2); }
   .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
   .method-steps { display: flex; flex-direction: column; gap: 0; }
@@ -475,7 +463,6 @@
   .dim-name { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
   .dim-items { font-family: var(--font-mono); font-size: 11px; color: var(--text3); }
 
-  /* ─── RESULTS ─── */
   #resultados { background: var(--bg); }
   .results-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
   .chart-wrap {
@@ -519,7 +506,6 @@
   }
   .result-desc { font-size: 11px; color: var(--text3); margin-top: 6px; line-height: 1.4; }
 
-  /* ─── PERCENTAGE FACTS ─── */
   #porcentajes { background: var(--bg2); }
   .pct-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .pct-card {
@@ -546,7 +532,6 @@
   .pct-label { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
   .pct-desc { font-size: 12px; color: var(--text2); line-height: 1.6; }
 
-  /* ─── CONCLUSIONS ─── */
   #conclusiones { background: var(--bg); }
   .concl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
   .concl-chain { display: flex; flex-direction: column; gap: 0; }
@@ -582,7 +567,6 @@
   .rec-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
   .rec-body { font-size: 12px; color: var(--text2); line-height: 1.5; }
 
-  /* ─── FINAL CALLOUT ─── */
   #callout {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -608,7 +592,6 @@
     margin: 0 auto 40px; position: relative; z-index: 1;
   }
 
-  /* ─── FOOTER ─── */
   footer {
     background: var(--bg);
     border-top: 1px solid var(--border2);
@@ -631,7 +614,6 @@
   }
   .footer-copy { font-family: var(--font-mono); font-size: 10px; color: var(--text3); letter-spacing: 1px; }
 
-  /* ─── ÍNDICE ─── */
   #indice {
     background: var(--bg2);
     border-top: 1px solid var(--border);
@@ -735,7 +717,6 @@
     height: 1px; background: var(--border2); margin: 6px 0;
   }
 
-  /* Barra de progreso global de lectura */
   #read-progress {
     position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
     height: 2px; background: transparent;
@@ -745,11 +726,11 @@
     width: 0%; transition: width 0.1s linear;
   }
 
-  /* ─── SCROLL REVEAL ─── */
+
   .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s, transform 0.7s; }
   .reveal.visible { opacity: 1; transform: none; }
 
-  /* ─── RESPONSIVE ─── */
+
   @media (max-width: 1024px) {
     nav { padding: 0 24px; }
     #hero { grid-template-columns: 1fr; padding: 100px 24px 48px; }
@@ -780,10 +761,10 @@
 </head>
 <body>
 
-<!-- BARRA DE PROGRESO DE LECTURA -->
+
 <div id="read-progress"><div id="read-progress-fill"></div></div>
 
-<!-- NAV -->
+
 <nav>
   <div class="nav-logo">CIBERSEG // UVM RESEARCH</div>
   <ul class="nav-links">
@@ -796,7 +777,7 @@
   <div class="nav-tag">▶ LIVE RESEARCH 2026</div>
 </nav>
 
-<!-- HERO -->
+
 <section id="hero">
   <div class="hero-bg-grid"></div>
   <div class="hero-bg-glow"></div>
@@ -844,7 +825,7 @@
   </div>
 </section>
 
-<!-- STATS BANNER -->
+
 <div id="stats-banner">
   <div class="stat-block reveal">
     <div class="stat-num cyan" data-count="31">0</div>
@@ -874,7 +855,7 @@
   </div>
 </div>
 
-<!-- ÍNDICE -->
+
 <section id="indice">
   <div class="indice-inner">
     <div class="indice-header reveal">
@@ -1010,7 +991,7 @@
   </div>
 </section>
 
-<!-- RESEARCH QUESTION -->
+
 <section id="research-q">
   <div class="rq-box reveal">
     <div class="section-eyebrow"><span class="dot"></span>Pregunta de Investigación</div>
@@ -1020,7 +1001,7 @@
   </div>
 </section>
 
-<!-- INCIDENTS -->
+
 <section id="incidents">
   <div class="section-eyebrow"><span class="dot red"></span>Casos Documentados</div>
   <h2>INCIDENTES <br><span style="color:var(--red)">CRÍTICOS</span></h2>
@@ -1060,7 +1041,7 @@
   </div>
 </section>
 
-<!-- TEORIA -->
+
 <section id="teoria">
   <div class="section-eyebrow"><span class="dot"></span>Marco Teórico</div>
   <h2>TRES PILARES<br><span style="color:var(--cyan)">CONCEPTUALES</span></h2>
@@ -1087,7 +1068,7 @@
   </div>
 </section>
 
-<!-- VARIABLES -->
+
 <section id="variables">
   <div class="section-eyebrow"><span class="dot"></span>Variables de Estudio</div>
   <h2>RELACIÓN<br><span style="color:var(--cyan)">CAUSAL</span></h2>
@@ -1113,7 +1094,7 @@
   </div>
 </section>
 
-<!-- HYPOTHESIS -->
+
 <section id="hipotesis">
   <div class="section-eyebrow"><span class="dot red"></span>Hipótesis de Trabajo</div>
   <div class="hyp-box reveal">
@@ -1124,7 +1105,7 @@
   </div>
 </section>
 
-<!-- METODOLOGÍA -->
+
 <section id="metodologia">
   <div class="section-eyebrow"><span class="dot"></span>Diseño Metodológico</div>
   <h2>MÉTODO<br><span style="color:var(--cyan)">CUANTITATIVO</span></h2>
@@ -1202,7 +1183,7 @@
   </div>
 </section>
 
-<!-- RESULTADOS -->
+
 <section id="resultados">
   <div class="section-eyebrow"><span class="dot red"></span>Resultados Cuantitativos</div>
   <h2>HALLAZGOS<br><span style="color:var(--red)">CRÍTICOS</span></h2>
@@ -1253,7 +1234,7 @@
   </div>
 </section>
 
-<!-- PORCENTAJES -->
+
 <section id="porcentajes">
   <div class="section-eyebrow"><span class="dot red"></span>Datos Porcentuales</div>
   <h2>LOS NÚMEROS<br><span style="color:var(--red)">NO MIENTEN</span></h2>
@@ -1302,7 +1283,7 @@
   </div>
 </section>
 
-<!-- CONCLUSIONES -->
+
 <section id="conclusiones">
   <div class="section-eyebrow"><span class="dot"></span>Discusión y Conclusiones</div>
   <h2>UN ESTADO DE<br><span style="color:var(--red)">INDEFENSIÓN DIGITAL</span></h2>
@@ -1370,7 +1351,7 @@
   </div>
 </section>
 
-<!-- CALLOUT FINAL -->
+
 <section id="callout">
   <div class="callout-text reveal">
     MIENTRAS LA CIBERSEGURIDAD SEA UN GASTO,<br>
@@ -1381,7 +1362,6 @@
   <a href="#hero" class="btn-primary reveal">↑ Volver al Inicio</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div>
     <div class="footer-col-title">Acerca del Estudio</div>
@@ -1420,7 +1400,7 @@
 </footer>
 
 <script>
-/* ── RADAR CANVAS ── */
+
 (function(){
   const canvas = document.getElementById('radarCanvas');
   if(!canvas) return;
@@ -1437,7 +1417,7 @@
     const n = 4;
     const angles = labels.map((_,i) => (i/n)*Math.PI*2 - Math.PI/2);
 
-    // Grid rings
+    
     for(let ring=1; ring<=5; ring++){
       const rr = (ring/5)*r;
       ctx.beginPath();
@@ -1450,13 +1430,13 @@
       ctx.strokeStyle = `rgba(0,212,255,${ring===5?0.2:0.07})`;
       ctx.lineWidth = ring===5?1:0.5;
       ctx.stroke();
-      // ring label
+     
       ctx.fillStyle = 'rgba(123,143,191,0.6)';
       ctx.font = '10px Space Mono, monospace';
       ctx.fillText((ring/5*5).toFixed(0), cx+4, cy - rr + 4);
     }
 
-    // Axes
+    
     angles.forEach(a => {
       ctx.beginPath();
       ctx.moveTo(cx,cy);
@@ -1466,7 +1446,7 @@
       ctx.stroke();
     });
 
-    // Animated fill
+    
     const animValues = values.map(v => v * (0.3 + 0.7 * anim));
     ctx.beginPath();
     angles.forEach((a,i) => {
@@ -1481,7 +1461,7 @@
     ctx.lineWidth = 1.5;
     ctx.stroke();
 
-    // Points + pulse
+   
     angles.forEach((a,i) => {
       const x = cx + Math.cos(a)*animValues[i]*r;
       const y = cy + Math.sin(a)*animValues[i]*r;
@@ -1498,7 +1478,7 @@
       ctx.fill();
     });
 
-    // Labels
+   
     ctx.font = '600 11px Space Grotesk, sans-serif';
     ctx.textAlign = 'center';
     angles.forEach((a,i) => {
@@ -1511,13 +1491,13 @@
       ctx.fillStyle = 'rgba(226,232,245,0.6)';
       ctx.font = '10px Space Grotesk, sans-serif';
       lines.slice(1).forEach((ln,li) => ctx.fillText(ln, lx, ly - (lines.length-1)*7 + (li+1)*13));
-      // score badge
+      
       ctx.fillStyle = colors[i];
       ctx.font = '700 13px Space Mono, monospace';
       ctx.fillText(values[i].toFixed(2)*5 + '/5', lx, ly + (lines.length)*10);
     });
 
-    // Center
+   
     const centerPulse = 0.5 + 0.5*Math.sin(t*0.04);
     ctx.beginPath(); ctx.arc(cx,cy,18+centerPulse*4,0,Math.PI*2);
     ctx.fillStyle = `rgba(0,212,255,${0.04+centerPulse*0.04})`; ctx.fill();
@@ -1540,7 +1520,7 @@
   requestAnimationFrame(animate);
 })();
 
-/* ── BAR CHART ── */
+
 (function(){
   const canvas = document.getElementById('barChart');
   if(!canvas) return;
@@ -1567,7 +1547,7 @@
   function draw(a){
     ctx.clearRect(0,0,cW,cH);
 
-    // Grid lines
+   
     for(let i=0;i<=5;i++){
       const y = padT + chartH - (i/5)*chartH;
       ctx.beginPath(); ctx.moveTo(padL,y); ctx.lineTo(padL+chartW,y);
@@ -1579,20 +1559,20 @@
       ctx.fillText(i.toString(), padL-6, y+4);
     }
 
-    // Bars
+    
     data.forEach((d,i) => {
       const bH = (d.val/5)*chartH * a;
       const x = padL + (i+0.5)*chartW/data.length - barW/2;
       const y = padT + chartH - bH;
 
-      // Glow
+      
       const grad = ctx.createLinearGradient(x, y, x, y+bH);
       grad.addColorStop(0, d.color);
       grad.addColorStop(1, d.color+'33');
       ctx.fillStyle = grad;
       ctx.fillRect(x, y, barW, bH);
 
-      // Value
+     
       if(a > 0.5){
         ctx.fillStyle = d.color;
         ctx.font = '700 13px Space Mono, monospace';
@@ -1600,7 +1580,7 @@
         ctx.fillText(d.val.toFixed(2), x+barW/2, y-8);
       }
 
-      // Label
+     
       const lines = d.label.split('\n');
       ctx.fillStyle = 'rgba(123,143,191,0.8)';
       ctx.font = '10px Space Grotesk, sans-serif';
@@ -1608,7 +1588,7 @@
       lines.forEach((ln,li) => ctx.fillText(ln, x+barW/2, padT+chartH+18+li*14));
     });
 
-    // Max line
+   
     ctx.beginPath(); ctx.moveTo(padL,padT); ctx.lineTo(padL+chartW,padT);
     ctx.strokeStyle='rgba(0,212,255,0.2)'; ctx.lineWidth=1; ctx.stroke();
     ctx.fillStyle='rgba(0,212,255,0.5)';
@@ -1629,7 +1609,7 @@
   obs.observe(canvas);
 })();
 
-/* ── COUNTER ANIMATION ── */
+
 (function(){
   function animCount(el){
     const target = parseInt(el.dataset.count);
@@ -1651,7 +1631,7 @@
   document.querySelectorAll('[data-count]').forEach(el=>obs.observe(el));
 })();
 
-/* ── STAT BARS ── */
+
 (function(){
   const obs = new IntersectionObserver(entries=>{
     entries.forEach(e=>{
@@ -1661,7 +1641,7 @@
   document.querySelectorAll('.stat-bar').forEach(el=>obs.observe(el));
 })();
 
-/* ── RESULT BAR FILLS ── */
+
 (function(){
   const obs = new IntersectionObserver(entries=>{
     entries.forEach(e=>{
@@ -1677,7 +1657,7 @@
   document.querySelectorAll('#resultados').forEach(el=>obs.observe(el));
 })();
 
-/* ── SCROLL REVEAL ── */
+
 (function(){
   const obs = new IntersectionObserver(entries=>{
     entries.forEach((e,i)=>{
@@ -1690,7 +1670,7 @@
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 })();
 
-/* ── BARRA DE PROGRESO DE LECTURA ── */
+
 (function(){
   const fill = document.getElementById('read-progress-fill');
   const pctEl = document.getElementById('indice-pct');
@@ -1705,7 +1685,7 @@
   update();
 })();
 
-/* ── ACTIVE NAV ── */
+
 (function(){
   const secs = document.querySelectorAll('section[id], div[id]');
   const links = document.querySelectorAll('.nav-links a');
